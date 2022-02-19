@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tootlip And Font Awesome Class Form</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+<body class="bg-info">
+    <div class="container">
+        <h1 class="text-center text-danger">Tootlip and Font Awesome Attendace Form</h1>
+        <form class="bg-light p-5 mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-primary text-light"  data-toggle="tooltip" data-placement="top" title="Child Name"><i class="fa fa-child"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="mt-5 col-md-12">
+                    <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-primary text-light"  data-toggle="tooltip" data-placement="top" title="Class"><i class="fa fa-wheelchair"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter Your Class">
+                    </div>
+                </div>
+                <div class="mt-5 col-md-12">
+                    <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-primary text-light"  data-toggle="tooltip" data-placement="top" title="Roll NO#"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter Your Roll No">
+                    </div>
+                </div>
+                <div class="mt-5 col-md-12">
+                    <div class="input-group md-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-primary text-light"  data-toggle="tooltip" data-placement="top" title="Your Timing"><i class="fa fa-clock"></i></span>
+                        </div>
+                        <input type="time" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <a class="btn mt-5  p-2 text-center btn-primary btn-block" href="tooltip.html">Submit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

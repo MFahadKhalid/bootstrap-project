@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopOver</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <h1 class="text-center text-warning">Popover Example</h1>
+        <div class="row">
+            <div class="text-center">
+            <div class="col-md-12">
+                <button class="mt-5 btn btn-success btn-lg" data-toggle="popover" title="Top Popover" data-trigger="focus" data-placement="top" data-content="popover Body">Top Popover</button>
+            </div>
+            <div class="col-md-12">
+                <button class="mt-5 btn btn-danger btn-lg" data-toggle="popover" data-trigger="focus" title="left Popover" data-placement="left" data-content="popover Body">Left Popover</button>
+            </div>
+            <div class="col-md-12">
+                <button class="mt-5 btn btn-info btn-lg" data-toggle="popover" title="right popover" data-trigger="focus" data-placement="right" data-content="popover Body">Right Popover</button>
+            </div>
+            <div class="col-md-12">
+                <button class="mt-5 btn btn-secondary btn-lg" data-toggle="popover" data-trigger="focus" title="bottom popover" data-placement="bottom" data-content="popover Body">Bottom Popover</button>
+            </div>
+        </div>
+    </div>
+</div>
+<fieldset></fieldset>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>

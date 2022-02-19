@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-primary">Attendace Table</h1>
+        <table class="mt-5 table table-border table-secondary table-hover bg-light">
+            <div class="row">
+            <div class="col-md-3">
+            <tr>
+                
+                <th><button class="ml-5 btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Roll NO#"><i class="fa fa-calendar"></i></button></th>
+                <th><button class="ml-5 btn btn-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="Child Name"><i class="fa fa-child"></i></button></th>
+                <th><button class="ml-5 btn btn-primary btn-lg" data-toggle="tooltip" data-placement="left" title="Phone Number"><i class="fa fa-phone"></i></button></th>
+                <th><button class="ml-5 btn btn-primary btn-lg" data-toggle="tooltip" data-placement="right" title="Class"><i class="fa fa-wheelchair"></i></button></th>
+            </tr>
+        </div>
+        <div class="col-md-3">
+            <tr>
+                <td class="pl-5" >1</td>
+                <td class="pl-5" >Fahad Khalid</td>
+                <td class="pl-5" >0344-7241705</td>
+                <td class="pl-5" >Matric</td>
+            </tr>
+        </div>
+        <div class="col-md-3">
+            <tr>
+                <td class="pl-5" >2</td>
+                <td class="pl-5" >Abdul Wahab Khalid</td>
+                <td class="pl-5" >0344-7241705</td>
+                <td class="pl-5" >Matric</td>
+            </tr>
+        </div>
+        <div class="col-md-3">
+            <tr>
+                <td class="pl-5" >3</td>
+                <td class="pl-5" >Zeeshan Khalid</td>
+                <td class="pl-5" >0344-7241705</td>
+                <td class="pl-5" >Four</td>
+            </tr>
+        </div>
+        <a class="btn btn-primary mt-2 p-2" href="tootlip_fontawesome.html">Back To Attendance form</a>
+    </div>
+        </table>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
